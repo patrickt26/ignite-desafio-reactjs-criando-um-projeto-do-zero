@@ -1,1 +1,80 @@
-// TODO
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  .postsList {
+    max-width: 720px;
+    margin: 5rem auto 0;
+
+    a {
+      display: block;
+      color: var(--gray-100);
+
+      & + a {
+        margin-top: 2rem;
+        padding-top: 2rem;
+      }
+
+      strong {
+        display: block;
+        font-size: 1.75rem;
+        margin-top: 1rem;
+        line-height: 2rem;
+
+        transition: color .2s;
+      }
+
+      &:hover {
+        color: var(--pink-500);
+      }
+
+      p {
+        color: var(--gray-300);
+        margin-top: .5rem;
+        line-height: 1.625rem;
+        font-size: 18px;
+      }
+    }
+
+    .authorContainer {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+
+      svg {
+        color: var(--gray-300);
+        height: 20px;
+        width: 20px;
+        margin-right: .5rem;
+      }
+
+      time {
+        font-size: 14px;
+        color: var(--gray-300);
+        margin-right: 2rem;
+        line-height: 1.625rem;
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: 0;
+      }
+    }
+
+    .loadMorePosts {
+      color: var(--pink-500);
+      margin-top: 4rem;
+      border: 0;
+      font-weight: 700;
+      font-size: 1.125rem;
+      background: transparent;
+
+      transition: opacity .2s;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
